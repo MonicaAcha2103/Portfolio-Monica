@@ -1,0 +1,38 @@
+.table--style{
+    width:100%;
+    // text-align: center;
+    padding: 5px;
+    
+}
+tr{
+    font-family: Arial, Helvetica, sans-serif;
+    //font-size: 15px;
+    // font-weight: bold;
+    //padding-left: 5px;
+    //padding-bottom: 3px;
+  }
+  .subtitle{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: grey;
+    text-align:center;
+    font-weight:bold;
+    }
+.left{
+    text-align:right;
+    
+}
+.right {
+    text-align:left;
+    
+}
+.edu{
+    font-weight: bold;
+    color: darken(grey,10);
+}
+.table--style-exp{
+margin-left: 1%;
+}
+.company{
+    color:darken(rgba(162,211,156,1),10);
+    font-weight: bold;
+}
