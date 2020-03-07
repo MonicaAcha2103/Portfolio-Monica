@@ -6,7 +6,7 @@ const Header = () => (
     <div className="header-image">  
     
     <div className="profile-photo">
-    <img className="photo" src= "https://media.licdn.com/dms/image/C5103AQEng8OpsnPduw/profile-displayphoto-shrink_100_100/0?e=1582156800&v=beta&t=4cskOxYf9E9-Kt4Sw1uqqFpR8TOsXH8WfWvMeePMMY8" alt= "profile photo"/>
+    <img className="photo" src= "https://media-exp1.licdn.com/dms/image/C4E03AQFvmALNjyifAA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=IZPESppizpvF0_4CkEn4PELKbfS_EZGJGaWPFb3ACtk" alt= "profile photo"/>
     </div>
     <h1 className="description"> Hey! This is Monica</h1>
     </div>
