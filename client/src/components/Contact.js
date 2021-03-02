@@ -10,37 +10,42 @@ class ContactForm extends Component {
       name: "",
       email: "",
       message: "",
-      number: ""
+      number: "",
     };
   }
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = async e => {
+  handleSubmit = async (e) => {
     console.log("submit event");
     e.preventDefault();
     const { name, email, message } = this.state;
 
-    this.setState({name: "", email:"", message:"", number:""},() => { console.log("sdds")}) 
+    this.setState({ name: "", email: "", message: "", number: "" }, () => {
+      console.log("sdds");
+    });
     const form = await axios.post("/api/form", {
       name,
       email,
-      message
+      message,
     });
   };
 
   render() {
     return (
       <div>
-        { /* <Maps /> */}
-         <br/><h1 className="subtitle "><a target="blank" href='https://drive.google.com/file/d/0BwDqY_-yfWBgS2xHbWJOWFZ5ZVBTZXJoTHNlQmI2UEtnY0pn/view?usp=sharing' >
-                
-          View Resume 
-          </a> or Contact Me</h1>
+        <br />
+        <h1 className="subtitle ">
+          <a
+            target="blank"
+            href="https://drive.google.com/file/d/1kbMPhA9SPZkT_IxsZLk631mhVQcHyRKT/view?usp=sharing"
+          >
+            View Resume
+          </a>{" "}
+          or Contact Me
+        </h1>
         <Form className="contact contact-form" onSubmit={this.handleSubmit}>
-          
-          
           <br />
           <br />
           <FormGroup>
@@ -89,13 +94,7 @@ class ContactForm extends Component {
           <Button className="float-right" color="primary" size="lg">
             Send Message
           </Button>
-
-
         </Form>
-       
-        
-          
-        
       </div>
     );
   }

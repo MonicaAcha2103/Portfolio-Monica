@@ -3,7 +3,7 @@ import { Table } from "reactstrap";
 const edu = [
   ["b.tech -software engineering", "srm university", "2018", "9.1 (cgpa)"],
   ["12th", "Guru Shree Shanthivijai Jain Vidyalaya", "2014", "86.4%"],
-  ["10th", "Guru Shree Shanthivijai Jain Vidyalaya", "2012", "89%"]
+  ["10th", "Guru Shree Shanthivijai Jain Vidyalaya", "2012", "89%"],
 ];
 
 const Education = () => (

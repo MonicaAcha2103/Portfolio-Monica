@@ -6,9 +6,9 @@ export default class Maps extends Component {
   static defaultProps = {
     center: {
       lat: 59.95,
-      lng: 30.33
+      lng: 30.33,
     },
-    zoom: 11
+    zoom: 11,
   };
 
   render() {
