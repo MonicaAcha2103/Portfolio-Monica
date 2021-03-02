@@ -7,7 +7,7 @@ const Header = () => (
       <div className="profile-photo">
         <img
           className="photo"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQFvmALNjyifAA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=IZPESppizpvF0_4CkEn4PELKbfS_EZGJGaWPFb3ACtk"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQEMJ0t2fccA0g/profile-displayphoto-shrink_400_400/0/1595496279185?e=1620259200&v=beta&t=mEcEBrvIp9819ehXhC0SpR7tJtSHeZ9lYoxY7Rii4iI"
           alt="profile photo"
         />
       </div>
