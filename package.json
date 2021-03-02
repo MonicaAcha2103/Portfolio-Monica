@@ -2,13 +2,11 @@
   "name": "email",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "10.16.0"
-  },
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "format": "prettier --write '**/*.js'",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
@@ -20,6 +18,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "nodemailer": "^5.1.1",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "prettier": "^2.2.1"
   }
 }

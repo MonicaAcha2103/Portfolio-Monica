@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-var cors = require('cors'); 
+var cors = require("cors");
 const path = require("path");
 const app = express();
 app.use(cors());
@@ -33,9 +33,8 @@ app.get("*", (req, res) => {
 // });
 
 app.post("/api/form", (req, res) => {
-console.log(req.body)
+  console.log(req.body);
   nodemailer.createTestAccount((err, account) => {
-
     const htmlEmail = `
         <h3> Contact Details </h3>
         <ul>
@@ -45,29 +44,29 @@ console.log(req.body)
         <h3>Message</h3>
         <p>${req.body.message}</p>
         `;
-//console.log(htmlEmail)
+    //console.log(htmlEmail)
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
-      port:  465, //587,
+      port: 465, //587,
       secure: true, // true for 465, false for other ports,
       tls: {
         // do not fail on invalid certs
-        rejectUnauthorized: false
-    },
+        rejectUnauthorized: false,
+      },
       auth: {
         user: "monicaacha2103@gmail.com",
-        pass: "***********"
-      }
+        pass: "***********",
+      },
     });
-console.log(transporter)
+    console.log(transporter);
     let mailOptions = {
       from: "test@testaccount.com",
       to: "monicaacha2103@gmail.com", // list of receivers
       subject: "New Message", // Subject line
       text: req.body.message, // plain text body
-      html: htmlEmail // html body
+      html: htmlEmail, // html body
     };
- // console.log(mailOptions)
+    // console.log(mailOptions)
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
         console.log(err);
